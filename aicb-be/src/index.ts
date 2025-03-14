@@ -5,7 +5,7 @@ const apiKey = process.env.GEMINI_API_KEY;
 const PORT = Number(process.env.PORT) || 8080;
 const wss = new WebSocketServer({ port: PORT, host: "0.0.0.0" });
 const { GoogleGenerativeAI } = require("@google/generative-ai");
-const genAI = new GoogleGenerativeAI(apiKey);
+const genAI = new GoogleGenerativeAI("AIzaSyAUOMKTtMI6zeHTnoK9xj0WGK6JUSgxIC4");
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 
